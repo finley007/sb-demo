@@ -1,0 +1,49 @@
+# system config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/java_template
+    username: root
+    password: root
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://yg.com:3306/gsgr_login
+#    username: root
+#    password: 123
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@yg.com:1521/xe
+#    username: sren
+#    password: qwe
+#    dialect: org.hibernate.dialect.Oracle11gDialect
+
+#  data: # MONGODB (MongoProperties)
+#    mongodb:
+#      authentication-database: # Authentication database name.
+#      field-naming-strategy:  # Fully qualified name of the FieldNamingStrategy to use.
+#      grid-fs-database: # GridFS database name.
+#      uri: mongodb://localhost:27017/test # Mongo database URI. When set, host and port are ignored.
+#      host: localhost # Mongo server host.
+#      port: 27017 # Mongo server port.
+#      database: test # Database name.
+#      password:  # Login password of the mongo server.
+#      repositories.enabled: true # Enable Mongo repositories.
+#      username:  # Login user of the mongo server.
+
+server:
+  port: 8080
+
+logging:
+  file: dbOper.log
+  level:
+    root: INFO
+    org:
+      hibernate: INFO
+      springframework: INFO
+    com:
+      hx:
+        yg: DEBUG
+
+
+db:
+  type: mysql
+  schema: java_template
+
