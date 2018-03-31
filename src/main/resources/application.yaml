@@ -1,10 +1,10 @@
 # system config
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/java_template
-    username: root
-    password: root
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=edu2016
+    username: eduuser
+    password: 111111
 #    driver-class-name: org.mariadb.jdbc.Driver
 #    url: jdbc:mariadb://yg.com:3306/gsgr_login
 #    username: root
@@ -44,6 +44,6 @@ logging:
 
 
 db:
-  type: mysql
-  schema: java_template
+  type: sqlserver
+  schema: edu2016
 

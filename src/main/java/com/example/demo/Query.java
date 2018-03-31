@@ -17,6 +17,9 @@ public class Query {
     @Value("${query.paged.list}")
     private String pagedList;
 
+    @Value("${parse.table}")
+    private String parseTable;
+
     public String getPkCols() {
         return pkCols;
     }
@@ -39,5 +42,13 @@ public class Query {
 
     public void setPagedList(String pagedList) {
         this.pagedList = pagedList;
+    }
+
+    public String getParseTable() {
+        return parseTable;
+    }
+
+    public void setParseTable(String parseTable) {
+        this.parseTable = parseTable;
     }
 }
